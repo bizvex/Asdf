@@ -1,0 +1,196 @@
+2019-02-26 16:36:11
+!!!SERVER START!!! -- /home/huxuanguang/CLionProjects/Asdf/main.cpp:16
+2019-02-26 16:36:15
+New connection from 127.0.0.1:43786 -- /home/huxuanguang/CLionProjects/Asdf/net/Server.cpp:51
+2019-02-26 16:36:15
+Request: GET /hello HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+
+ -- /home/huxuanguang/CLionProjects/Asdf/net/HttpData.cpp:70
+2019-02-26 16:36:15
+New connection from 127.0.0.1:43790 -- /home/huxuanguang/CLionProjects/Asdf/net/Server.cpp:51
+2019-02-26 16:37:22
+!!!SERVER START!!! -- /home/huxuanguang/CLionProjects/Asdf/main.cpp:16
+2019-02-26 16:37:26
+New connection from 127.0.0.1:43804 -- /home/huxuanguang/CLionProjects/Asdf/net/Server.cpp:51
+2019-02-26 16:37:26
+Request: GET /hello HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+
+ -- /home/huxuanguang/CLionProjects/Asdf/net/HttpData.cpp:70
+2019-02-26 16:37:26
+New connection from 127.0.0.1:43808 -- /home/huxuanguang/CLionProjects/Asdf/net/Server.cpp:51
+2019-02-26 16:39:17
+!!!SERVER START!!! -- /home/huxuanguang/CLionProjects/Asdf/main.cpp:16
+2019-02-26 16:39:23
+New connection from 127.0.0.1:43826 -- /home/huxuanguang/CLionProjects/Asdf/net/Server.cpp:51
+2019-02-26 16:39:23
+Request: GET /hello HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+
+ -- /home/huxuanguang/CLionProjects/Asdf/net/HttpData.cpp:70
+2019-02-26 16:39:23
+New connection from 127.0.0.1:43830 -- /home/huxuanguang/CLionProjects/Asdf/net/Server.cpp:51
+2019-02-26 16:41:47
+Request:  -- /home/huxuanguang/CLionProjects/Asdf/net/HttpData.cpp:70
+2019-02-26 16:42:05
+Request:  -- /home/huxuanguang/CLionProjects/Asdf/net/HttpData.cpp:70
+2019-02-26 16:42:05
+New connection from 127.0.0.1:43844 -- /home/huxuanguang/CLionProjects/Asdf/net/Server.cpp:51
+2019-02-26 16:42:05
+Request: GET / HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+
+ -- /home/huxuanguang/CLionProjects/Asdf/net/HttpData.cpp:70
+2019-02-26 16:42:05
+New connection from 127.0.0.1:43848 -- /home/huxuanguang/CLionProjects/Asdf/net/Server.cpp:51
+2019-02-26 16:42:05
+Request: GET /favicon.ico HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+
+ -- /home/huxuanguang/CLionProjects/Asdf/net/HttpData.cpp:70
+2019-02-27 15:22:35
+!!!SERVER START!!! -- /home/huxuanguang/CLionProjects/Asdf/main.cpp:16
+2019-02-27 15:22:53
+New connection from 127.0.0.1:55576 -- /home/huxuanguang/CLionProjects/Asdf/net/Server.cpp:51
+2019-02-27 15:22:53
+New connection from 127.0.0.1:55580 -- /home/huxuanguang/CLionProjects/Asdf/net/Server.cpp:51
+2019-02-27 15:22:53
+Request: GET /hello HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+
+ -- /home/huxuanguang/CLionProjects/Asdf/net/HttpData.cpp:70
+2019-02-27 15:23:31
+Request:  -- /home/huxuanguang/CLionProjects/Asdf/net/HttpData.cpp:70
+2019-02-27 15:36:21
+!!!SERVER START!!! -- /home/huxuanguang/CLionProjects/Asdf/main.cpp:16
+2019-02-27 15:36:36
+New connection from 127.0.0.1:55910 -- /home/huxuanguang/CLionProjects/Asdf/net/Server.cpp:51
+2019-02-27 15:36:36
+Request: GET /index.html HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+
+ -- /home/huxuanguang/CLionProjects/Asdf/net/HttpData.cpp:70
+2019-02-27 15:36:36
+New connection from 127.0.0.1:55914 -- /home/huxuanguang/CLionProjects/Asdf/net/Server.cpp:51
+2019-02-27 15:36:36
+Request: GET /favicon.ico HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/index.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+
+ -- /home/huxuanguang/CLionProjects/Asdf/net/HttpData.cpp:70
+2019-02-27 15:37:04
+New connection from 127.0.0.1:55934 -- /home/huxuanguang/CLionProjects/Asdf/net/Server.cpp:51
+2019-02-27 15:37:04
+Request: GET /hello HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+Purpose: prefetch
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+
+ -- /home/huxuanguang/CLionProjects/Asdf/net/HttpData.cpp:70
+2019-02-27 15:37:04
+New connection from 127.0.0.1:55938 -- /home/huxuanguang/CLionProjects/Asdf/net/Server.cpp:51
+2019-02-27 15:39:21
+Request:  -- /home/huxuanguang/CLionProjects/Asdf/net/HttpData.cpp:70
+2019-02-27 16:03:00
+!!!SERVER START!!! -- /home/huxuanguang/CLionProjects/Asdf/main.cpp:16
+2019-02-27 16:03:06
+New connection from 127.0.0.1:56504 -- /home/huxuanguang/CLionProjects/Asdf/net/Server.cpp:51
+2019-02-27 16:03:06
+Request: GET /hello HTTP/1.1 -- /home/huxuanguang/CLionProjects/Asdf/net/HttpData.cpp:70
+2019-02-27 16:04:07
+!!!SERVER START!!! -- /home/huxuanguang/CLionProjects/Asdf/main.cpp:16
+2019-02-27 16:04:13
+New connection from 127.0.0.1:56506 -- /home/huxuanguang/CLionProjects/Asdf/net/Server.cpp:51
+2019-02-27 16:04:13
+Request: GET /hello HTTP/1.1 -- /home/huxuanguang/CLionProjects/Asdf/net/HttpData.cpp:70
+2019-02-27 16:06:44
+!!!SERVER START!!! -- /home/huxuanguang/CLionProjects/Asdf/main.cpp:16
+2019-02-27 16:06:49
+New connection from 127.0.0.1:56518 -- /home/huxuanguang/CLionProjects/Asdf/net/Server.cpp:51
+2019-02-27 16:06:49
+Request: GET /hello HTTP/1.1
+
+ -- /home/huxuanguang/CLionProjects/Asdf/net/HttpData.cpp:70
+2019-02-27 16:08:05
+!!!SERVER START!!! -- /home/huxuanguang/CLionProjects/Asdf/main.cpp:16
+2019-02-27 16:08:15
+New connection from 127.0.0.1:56520 -- /home/huxuanguang/CLionProjects/Asdf/net/Server.cpp:51
+2019-02-27 16:08:15
+Request: GET /hello HTTP/1.1
+
+ -- /home/huxuanguang/CLionProjects/Asdf/net/HttpData.cpp:70
+2019-02-27 16:09:06
+!!!SERVER START!!! -- /home/huxuanguang/CLionProjects/Asdf/main.cpp:16
+2019-02-27 16:09:11
+New connection from 127.0.0.1:56522 -- /home/huxuanguang/CLionProjects/Asdf/net/Server.cpp:51
+2019-02-27 16:09:19
+Request: GET /hello HTTP/1.1
+
+ -- /home/huxuanguang/CLionProjects/Asdf/net/HttpData.cpp:70
+2019-02-27 16:14:45
+!!!SERVER START!!! -- /home/huxuanguang/CLionProjects/Asdf/main.cpp:16
+2019-02-27 16:14:51
+New connection from 127.0.0.1:56548 -- /home/huxuanguang/CLionProjects/Asdf/net/Server.cpp:51
+2019-02-27 16:14:51
+Request: GET /hello HTTP/1.1
+Connection: keep-alive
+
+ -- /home/huxuanguang/CLionProjects/Asdf/net/HttpData.cpp:70
+2019-02-27 16:14:51
+Request:  -- /home/huxuanguang/CLionProjects/Asdf/net/HttpData.cpp:70

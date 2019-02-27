@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Asdf"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\base\;CMake Files\base\test_log\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Asdf">
+				<Option output="/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/Asdf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 Asdf"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Asdf/fast">
+				<Option output="/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/Asdf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 Asdf/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TESTLOG">
+				<Option output="/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/base/test_log/TESTLOG" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/base/test_log"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/base/test_log/Makefile&quot;  VERBOSE=1 TESTLOG"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/base/test_log/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/base/test_log/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/base/test_log/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TESTLOG/fast">
+				<Option output="/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/base/test_log/TESTLOG" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/base/test_log"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/base/test_log/Makefile&quot;  VERBOSE=1 TESTLOG/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/base/test_log/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/base/test_log/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/base/test_log/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/base/AsyncLogging.cpp">
+			<Option target="Asdf"/>
+			<Option target="TESTLOG"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/base/AsyncLogging.h">
+			<Option target="Asdf"/>
+			<Option target="TESTLOG"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/base/Channel.cpp">
+			<Option target="Asdf"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/base/Channel.h">
+			<Option target="Asdf"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/base/Epoll.cpp">
+			<Option target="Asdf"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/base/Epoll.h">
+			<Option target="Asdf"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/base/EventLoop.cpp">
+			<Option target="Asdf"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/base/EventLoop.h">
+			<Option target="Asdf"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/base/EventLoopThread.cpp">
+			<Option target="Asdf"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/base/EventLoopThread.h">
+			<Option target="Asdf"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/base/EventLoopThreadPool.cpp">
+			<Option target="Asdf"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/base/EventLoopThreadPool.h">
+			<Option target="Asdf"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/base/FileUtil.cpp">
+			<Option target="Asdf"/>
+			<Option target="TESTLOG"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/base/FileUtil.h">
+			<Option target="Asdf"/>
+			<Option target="TESTLOG"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/base/LogFile.cpp">
+			<Option target="Asdf"/>
+			<Option target="TESTLOG"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/base/LogFile.h">
+			<Option target="Asdf"/>
+			<Option target="TESTLOG"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/base/LogStream.cpp">
+			<Option target="Asdf"/>
+			<Option target="TESTLOG"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/base/LogStream.h">
+			<Option target="Asdf"/>
+			<Option target="TESTLOG"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/base/Logging.cpp">
+			<Option target="Asdf"/>
+			<Option target="TESTLOG"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/base/Logging.h">
+			<Option target="Asdf"/>
+			<Option target="TESTLOG"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/base/Timer.cpp">
+			<Option target="Asdf"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/base/Timer.h">
+			<Option target="Asdf"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/base/Util.cpp">
+			<Option target="Asdf"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/base/Util.h">
+			<Option target="Asdf"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/base/test_log/TestLog.cpp">
+			<Option target="TESTLOG"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/main.cpp">
+			<Option target="Asdf"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/net/HttpData.cpp">
+			<Option target="Asdf"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/net/HttpData.h">
+			<Option target="Asdf"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/net/MimeType.cpp">
+			<Option target="Asdf"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/net/MimeType.h">
+			<Option target="Asdf"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/net/Server.cpp">
+			<Option target="Asdf"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/net/Server.h">
+			<Option target="Asdf"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/huxuanguang/CLionProjects/Asdf/base/test_log/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\base\test_log\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

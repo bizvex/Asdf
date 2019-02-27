@@ -1,0 +1,6 @@
+/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/CMakeFiles/Asdf.dir
+/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/base/test_log/CMakeFiles/rebuild_cache.dir
+/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/base/test_log/CMakeFiles/TESTLOG.dir
+/home/huxuanguang/CLionProjects/Asdf/cmake-build-debug/base/test_log/CMakeFiles/edit_cache.dir
