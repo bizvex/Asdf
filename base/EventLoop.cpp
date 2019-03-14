@@ -79,7 +79,7 @@ void EventLoop::loop()
 //对wakeupFd_写入数据
 void EventLoop::wakeup()
 {
-    //通过向wakeupFd_写入一个字节，使IO线程从epoll_wait中返回
+    //通过向wakeupFd_写入一个8字节整数，使IO线程从epoll_wait中返回
     uint64_t one = 1;
     ssize_t n = writen(wakeupFd_, (char*)(&one), sizeof one);
     if (n != sizeof one)

@@ -49,12 +49,16 @@ ssize_t readn(int fd, std::string &inBuffer, bool &zero)
     ssize_t readSum = 0;
     while (true)
     {
+        /*
+         * TCP递交上来的数据一定是完整的，（即使是内核缓冲区不够大，但也通过while(true)保证了）
+         * 所以请求一定时完整的，不存在请求只读到一半的情况
+         */
         char buff[MAX_BUFF];
         if ((nread = read(fd, buff, MAX_BUFF)) < 0)
         {
             if (errno == EINTR)
                 continue;
-            else if (errno == EAGAIN)
+            else if (errno == EAGAIN)//ET和非阻塞的处理，当前数据已读完
             {
                 return readSum;
             }
@@ -64,7 +68,7 @@ ssize_t readn(int fd, std::string &inBuffer, bool &zero)
                 return -1;
             }
         }
-        else if (nread == 0)
+        else if (nread == 0)//对端已关闭
         {
             //printf("redsum = %d\n", readSum);
             zero = true;
