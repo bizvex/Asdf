@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/TESTLOG.dir/TestLog.cpp.o CMakeFiles/TESTLOG.dir/__/FileUtil.cpp.o CMakeFiles/TESTLOG.dir/__/LogFile.cpp.o CMakeFiles/TESTLOG.dir/__/LogStream.cpp.o CMakeFiles/TESTLOG.dir/__/AsyncLogging.cpp.o CMakeFiles/TESTLOG.dir/__/Logging.cpp.o  -o TESTLOG -lpthread 
