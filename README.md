@@ -8,3 +8,11 @@
 4. 一个subReactor会同时监听若干个不同的acceptfd。一旦某个acceptfd就绪，会使得epoll_wait返回。返回后首先执行注册好的函数回调，接着是任务队列中的函数，最后是处理过期的acceptfd。
 ## 重要的类
 - [EventLoop类](https://github.com/bizvex/Asdf/blob/master/EventLoop%E7%B1%BB.md)
+- [Server类](https://github.com/bizvex/Asdf/blob/master/introduction/Server%E7%B1%BB.md)
+- [Channel类](https://github.com/bizvex/Asdf/blob/master/introduction/Channel%E7%B1%BB.md)
+- [异步日志](https://github.com/bizvex/Asdf/blob/master/introduction/%E5%BC%82%E6%AD%A5%E6%97%A5%E5%BF%97.md)
+- [定时器](https://github.com/bizvex/Asdf/blob/master/introduction/%E5%AE%9A%E6%97%B6%E5%99%A8.md)
+- [关闭连接](https://github.com/bizvex/Asdf/blob/master/introduction/%E5%85%B3%E9%97%AD%E8%BF%9E%E6%8E%A5.md)
+## 环境
+OS: ubuntu16.04  
+Complier: g++ 4.8
