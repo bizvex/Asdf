@@ -240,7 +240,6 @@ void HttpData::handleConn()
     }
     else
     {
-        //cout << "close with errors" << endl;
         loop_->runInLoop(bind(&HttpData::handleClose, shared_from_this()));
     }
 }
