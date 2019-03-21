@@ -16,3 +16,16 @@
 ## 环境
 OS: ubuntu16.04  
 Complier: g++ 4.8
+## 测试结果  
+- 主线程1个，线程池线程4个  
+- QPS  
+  短连接: 4万4    
+  长连接: 10万  
+- webbench结果  
+  ![短连接](https://github.com/bizvex/Asdf/blob/master/introduction/%E7%9F%AD%E8%BF%9E%E6%8E%A5.png "短连接")  
+  ![长连接](https://github.com/bizvex/Asdf/blob/master/introduction/%E9%95%BF%E8%BF%9E%E6%8E%A5.png "长连接")  
+- 负载  
+  长连接与短连接负载的区别在于主线程。短连接的主线程需要不断地accept，所以负载较高；长连接的主线程则不用，所以负载较低。
+  ![空闲负载](https://github.com/bizvex/Asdf/blob/master/introduction/%E7%A9%BA%E9%97%B2%E8%B4%9F%E8%BD%BD.png "空闲负载")
+  ![短连接负载](https://github.com/bizvex/Asdf/blob/master/introduction/%E7%9F%AD%E8%BF%9E%E6%8E%A5%E8%B4%9F%E8%BD%BD.png "短连接负载")
+  ![长连接负载](https://github.com/bizvex/Asdf/blob/master/introduction/%E9%95%BF%E8%BF%9E%E6%8E%A5%E8%B4%9F%E8%BD%BD.png "长连接负载")
