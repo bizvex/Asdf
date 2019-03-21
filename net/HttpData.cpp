@@ -13,8 +13,6 @@
 const int DEFAULT_EXPIRED_TIME = 2000; // ms
 const int DEFAULT_KEEP_ALIVE_TIME = 5 * 60 * 1000; // ms
 
-const __uint32_t DEFAULT_EVENT = EPOLLIN | EPOLLET | EPOLLONESHOT;
-
 HttpData::HttpData(EventLoop *loop, int connfd):
         loop_(loop),
         channel_(new Channel(loop, connfd)),
@@ -153,27 +151,20 @@ void HttpData::handleRead()
         }
     } while (false);
 
-    //结束循环
     if (!error_)//没有错误
     {
         //cout<<outBuffer_.size()<<endl;
         if (outBuffer_.size() > 0)
         {
             handleWrite();
-            //events_ |= EPOLLOUT;
         }
-        // error_ may change
+        // error_ 可能在handleWrite里面改变
         if (!error_ && state_ == STATE_FINISH)
         {
             this->reset();
-            if (inBuffer_.size() > 0)
-            {
-                if (connectionState_ != H_DISCONNECTING)
-                    handleRead();
-            }
         }
         else if (!error_ && connectionState_ != H_DISCONNECTED)
-            events_ |= EPOLLIN;
+            events_ |= EPOLLIN;//剩下的内容还没发到,重新添加回对EPOLLIN的监听
     }
 }
 
@@ -190,8 +181,8 @@ void HttpData::handleWrite()
             error_ = true;
         }
 //        cout<<outBuffer_.size()<<endl;
-        if (outBuffer_.size() > 0)
-            events_ |= EPOLLOUT;
+        if (outBuffer_.size() > 0)//writen的时候出现EAGAIN,导致没写完
+            events_ |= EPOLLOUT;//添加对EPOLLOUT的监听,在Channel::handleWrite()中再写
     }
 }
 
@@ -199,6 +190,10 @@ void HttpData::handleConn()
 {
     seperateTimer();
     __uint32_t &events_ = channel_->getEvents();
+    /*
+     * 如果有EPOLLIN说明还有内容没收到
+     * 如果有EPOLLOUT说明还有内容没发出去
+     */
     if (!error_ && connectionState_ == H_CONNECTED)
     {
         if (events_ != 0)
@@ -209,37 +204,31 @@ void HttpData::handleConn()
             if ((events_ & EPOLLIN) && (events_ & EPOLLOUT))
             {
                 events_ = __uint32_t(0);
-                events_ |= EPOLLOUT;
+                events_ |= EPOLLOUT;// 先把上一个的可写事件完成
             }
-            //events_ |= (EPOLLET | EPOLLONESHOT);
-            events_ |= EPOLLET;
+
             loop_->updatePoller(channel_, timeout);
 
         }
         else if (keepAlive_)
         {
-            events_ |= (EPOLLIN | EPOLLET);
-            //events_ |= (EPOLLIN | EPOLLET | EPOLLONESHOT);
+            events_ |= EPOLLIN;//重新添加回对EPOLLIN的监听
+
             int timeout = DEFAULT_KEEP_ALIVE_TIME;
             loop_->updatePoller(channel_, timeout);
         }
         else
         {
-            //cout << "close normally" << endl;
-            // loop_->shutdown(channel_);
-            // loop_->runInLoop(bind(&HttpData::handleClose, shared_from_this()));
-            events_ |= (EPOLLIN | EPOLLET);
-            //events_ |= (EPOLLIN | EPOLLET | EPOLLONESHOT);
-            int timeout = (DEFAULT_KEEP_ALIVE_TIME >> 1);
-            loop_->updatePoller(channel_, timeout);
+            loop_->runInLoop(bind(&HttpData::handleClose, shared_from_this()));//服务器端断开连接
         }
     }
     else if (!error_ && connectionState_ == H_DISCONNECTING && (events_ & EPOLLOUT))
     {
-        events_ = (EPOLLOUT | EPOLLET);
+        events_ = EPOLLOUT;//H_DISCONNECTING不需要再监听EPOLLIN
     }
     else
     {
+        //处理错误
         loop_->runInLoop(bind(&HttpData::handleClose, shared_from_this()));
     }
 }
@@ -557,13 +546,12 @@ void HttpData::handleError(int fd, int err_num, string short_msg)
 void HttpData::handleClose()
 {
     connectionState_ = H_DISCONNECTED;
-    shared_ptr<HttpData> guard(shared_from_this());
     loop_->removeFromPoller(channel_);
 }
 
 
 void HttpData::newEvent()
 {
-    channel_->setEvents(DEFAULT_EVENT);
+    channel_->setEvents(EPOLLIN);
     loop_->addToPoller(channel_, DEFAULT_EXPIRED_TIME);
 }

@@ -32,21 +32,8 @@ void Channel::setFd(int fd)
 void Channel::handleEvents()
 {
     events_ = 0;
-    if ((revents_ & EPOLLHUP) && !(revents_ & EPOLLIN))
-    {
-        events_ = 0;
-        return;
-    }
-    if (revents_ & EPOLLERR)
-    {
-        if (errorHandler_)
-            errorHandler_();
-        events_ = 0;
-        return;
-    }
 
-    //start
-    if (revents_ & (EPOLLIN | EPOLLPRI | EPOLLRDHUP))
+    if (revents_ & EPOLLIN)
     {
         handleRead();
     }

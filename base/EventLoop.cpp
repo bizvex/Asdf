@@ -39,7 +39,7 @@ EventLoop::EventLoop()
         t_loopInThisThread = this;
     }
 
-    pwakeupChannel_->setEvents(EPOLLIN | EPOLLET);
+    pwakeupChannel_->setEvents(EPOLLIN);
     pwakeupChannel_->setReadHandler(bind(&EventLoop::handleRead, this));
     pwakeupChannel_->setConnHandler(bind(&EventLoop::handleConn, this));
     poller_->epoll_add(pwakeupChannel_, 0);
@@ -96,7 +96,7 @@ void EventLoop::handleRead()
     {
         LOG << "EventLoop::handleRead() reads " << n << " bytes instead of 8";
     }
-    pwakeupChannel_->setEvents(EPOLLIN | EPOLLET);
+    pwakeupChannel_->setEvents(EPOLLIN);
 }
 
 void EventLoop::handleConn()

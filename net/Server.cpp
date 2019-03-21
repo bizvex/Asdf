@@ -32,7 +32,7 @@ Server::~Server()
 void Server::start()
 {
     eventLoopThreadPool_->start();
-    acceptChannel_->setEvents(EPOLLIN | EPOLLET);
+    acceptChannel_->setEvents(EPOLLIN);
     acceptChannel_->setReadHandler(bind(&Server::handNewConn, this));
     acceptChannel_->setConnHandler(bind(&Server::handThisConn, this));
     loop_->addToPoller(acceptChannel_, 0);
@@ -70,5 +70,5 @@ void Server::handNewConn()
         req_info->getChannel()->setHolder(req_info);
         loop->queueInLoop(std::bind(&HttpData::newEvent, req_info));
     }
-    acceptChannel_->setEvents(EPOLLIN | EPOLLET);
+    acceptChannel_->setEvents(EPOLLIN);
 }
