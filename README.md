@@ -7,7 +7,7 @@
 3. 当有客户到来时，listenfd就绪，导致mainReactor从epoll_wait返回。然后accept得到acceptfd，并将这个acceptfd以round robin的方式分配给步骤2中的subReactor。具体做法是，使用跨线程调用函数queueInLoop()把能将acceptfd加入到epoll监听的函数送入到目标线程的任务队列。
 4. 一个subReactor会同时监听若干个不同的acceptfd。一旦某个acceptfd就绪，会使得epoll_wait返回。返回后首先执行注册好的函数回调，接着是任务队列中的函数，最后是处理过期的acceptfd。
 ## 重要的类
-- [EventLoop类](https://github.com/bizvex/Asdf/blob/master/EventLoop%E7%B1%BB.md)
+- [EventLoop类](https://github.com/bizvex/Asdf/blob/master/introduction/EventLoop%E7%B1%BB.md)
 - [Server类](https://github.com/bizvex/Asdf/blob/master/introduction/Server%E7%B1%BB.md)
 - [Channel类](https://github.com/bizvex/Asdf/blob/master/introduction/Channel%E7%B1%BB.md)
 - [异步日志](https://github.com/bizvex/Asdf/blob/master/introduction/%E5%BC%82%E6%AD%A5%E6%97%A5%E5%BF%97.md)
